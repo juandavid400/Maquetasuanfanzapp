@@ -5,23 +5,23 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  user: UserI | undefined;
+  // user: UserI | undefined;
 
   constructor() { }
 
-  login(user: UserI){
-    const passkey = "suanfazon";
-    if (user.password === passkey){
-      this.user = user;
-      window.localStorage.setItem('user', JSON.stringify(this.user));
-    }
-  }
+  // login(user: UserI){
+  //   const passkey = "suanfazon";
+  //   if (user.password === passkey){
+  //     this.user = user;
+  //     window.localStorage.setItem('user', JSON.stringify(this.user));
+  //   }
+  // }
 
-  isLogged(){
-    return window.localStorage.getItem('user') ? true: false;
-  }
+  // isLogged(){
+  //   return window.localStorage.getItem('user') ? true: false;
+  // }
 
-  logout (){
-    window.localStorage.clear();
-  }
+  // logout (){
+  //   window.localStorage.clear();
+  // }
 }
